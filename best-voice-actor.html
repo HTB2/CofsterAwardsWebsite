@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Best Voice Actor</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">Best Voice Actor</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250008.jpg" alt="" onclick="openModal('modal1', 'Harry J. Coffee')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Harry J. Coffee</p>
+                        <p class="poster-desc">Yours truly</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250009.jpg" alt="" onclick="openModal('modal2', 'Zach Hadel')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Zach Hadel</p>
+                        <p class="poster-desc">His voice sounds familiar to Harry Jon Be...</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/Sr_Pelo_2019.jpg" alt="" onclick="openModal('modal3', 'David Axel Cazares Casanova')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">David Axel Cazares Casanova</p>
+                        <p class="poster-desc">A Loud-Mouthed Voice Actor</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250010.jpg" alt="" onclick="openModal('modal4', 'Michael Kovach')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Michael Kovach</p>
+                        <p class="poster-desc">Prince of Voice Acting himself</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal5', 'Harry J. Coffee & Michael Kovach')">WINNERS</a>
+                <a class="return-button3" href="nominees.html">Back to the Main Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250008.jpg" alt="Harry J. Coffee" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250009.jpg" alt="Zach Hadel" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/Misc/Sr_Pelo_2019.jpg" alt="David Axel Cazares Casanova" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250010.jpg" alt="Michael Kovach" class="modal-content">
+  <div class="caption"></div>
+</div>
+<div id="modal5" class="modal">
+  <span class="close" onclick="closeModal('modal5')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250012.jpg" alt="Harry J. Coffee & Michael Kovach" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

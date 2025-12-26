@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Best Meme</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">Best Meme</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250002.jpg" alt="" onclick="openModal('modal1', 'Go to Sleep, Go to Sleep')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Go to Sleep, Go to Sleep</p>
+                        <p class="poster-desc">"Is your baby crying? I'll make them stop,"</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/AA1LOXb0.jfif" alt="" onclick="openModal('modal2', '6-7')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">6-7</p>
+                        <p class="poster-desc">In which Gen-Alpha kids say it</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250003.jpg" alt="" onclick="openModal('modal3', 'Labubu')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Labubu</p>
+                        <p class="poster-desc">It was a spinoff version of Domo-Kun</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250004.jpg" alt="" onclick="openModal('modal4', 'Chicken Stars')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Chicken Stars</p>
+                        <p class="poster-desc">Huh. Adam Sandler let this slide...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal5', '6-7 & Chicken Stars')">WINNERS</a>
+                <a class="return-button3" href="nominees.html">Back to the Main Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250002.jpg" alt="Go to Sleep, Go to Sleep" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/Misc/AA1LOXb0.jfif" alt="6-7" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250003.jpg" alt="Labubu" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250004.jpg" alt="Chicken Stars" class="modal-content">
+  <div class="caption"></div>
+</div>
+<div id="modal5" class="modal">
+  <span class="close" onclick="closeModal('modal5')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250011.jpg" alt="6-7 & Chicken Stars" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

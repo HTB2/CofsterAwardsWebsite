@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Most Memorable Meme</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">MOST MEMORABLE MEME</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250005.jpg" alt="" onclick="openModal('modal1', 'Trollface')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Trollface</p>
+                        <p class="poster-desc">We do a little trollin</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250006.jpg" alt="" onclick="openModal('modal2', 'Team Fortress 2')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Team Fortress 2</p>
+                        <p class="poster-desc">A Nostalgic 2007 Valve Game</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/lucky-star-01.jpg" alt="" onclick="openModal('modal3', 'Lucky Star')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Lucky Star</p>
+                        <p class="poster-desc">An 2007 24-episode anime</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250007.jpg" alt="" onclick="openModal('modal4', 'DOGE')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">DOGE</p>
+                        <p class="poster-desc">Huh. A classic Shibu Inu how time flies</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal2', 'Team Fortress 2')">WINNERS</a>
+                <a class="return-button3" href="nominees.html">Back to the Main Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250005.jpg" alt="Trollface" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250006.jpg" alt="Team Fortress 2" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/Misc/lucky-star-01.jpg" alt="Lucky Star" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250007.jpg" alt="DOGE" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

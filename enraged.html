@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Enraged</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">Enraged</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/AVGN/videoframe_934534.png" alt="" onclick="openModal('modal1', 'Nerd Rage')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Nerd Rage</p>
+                        <p class="poster-desc">"He's an angriest gamer you've ever heard"</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Nostalgia Critic/videoframe_365250.png" alt="" onclick="openModal('modal2', 'Nostalgia Critic Rage')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Nostalgia Critic Rage</p>
+                        <p class="poster-desc">"The Review Must Go On"</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/BX/videoframe_296363.png" alt="" onclick="openModal('modal3', 'Gizmo Rage')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Gizmo Rage</p>
+                        <p class="poster-desc">Gizmo got betrayed by Rushi</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/BM/videoframe_36147.png" alt="" onclick="openModal('modal4', 'Candy Bunny Rage')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Candy Bunny Rage</p>
+                        <p class="poster-desc">"Lovely Bunny Maloney, lovely Bunny."</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal4', 'Candy Bunny Rage')">WINNERS</a>
+                <a class="return-button" href="comedy-faces.html">Back to the Comedy Faces Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/AVGN/videoframe_934534.png" alt="Nerd Rage" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/Nostalgia Critic/videoframe_365250.png" alt="Nostalgia Critic Rage" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/BX/videoframe_296363.png" alt="Gizmo Rage" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/BM/videoframe_36147.png" alt="Candy Bunny Rage" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

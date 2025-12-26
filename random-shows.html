@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Random Shows</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">RANDOM SHOWS OUTSIDE OF HTB TV OF THE YEAR</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/CofsterAwardWinners20250001.jpg" alt="" onclick="openModal('modal1', 'South Park')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">South Park</p>
+                        <p class="poster-desc">"Going into South Park, gonna have myse...</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/p0b0dsn0.jpg" alt="" onclick="openModal('modal2', 'Limmys Show')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Limmy's Show</p>
+                        <p class="poster-desc">One obscure Scottish comedy show</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/p089j77w.jpg" alt="" onclick="openModal('modal3', 'The Joy of Painting')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">The Joy of Painting</p>
+                        <p class="poster-desc">Where Bob Ross is best known</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Misc/PILOT_Thumbnail.png" alt="" onclick="openModal('modal4', 'Knight of Guinevere')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Knight of Guinevere</p>
+                        <p class="poster-desc">First 2D Glitch Productions Series</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal1', 'South Park')">WINNERS</a>
+                <a class="return-button3" href="nominees.html">Back to the Main Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/CofsterAwardWinners20250001.jpg" alt="South Park" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/Misc/p0b0dsn0.jpg" alt="Limmy's Show" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/Misc/p089j77w.jpg" alt="The Joy of Painting" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/Misc/PILOT_Thumbnail.png" alt="Knights of Guinevere" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTB TV - Cofster Awards - Curiousity</title>
+    <link rel="stylesheet" href="css/show.css">
+    <link rel="stylesheet" href="css/button-selection.css">
+    <link rel="stylesheet" href="css/posterarticles.css">
+    <link rel="shortcut icon" href="img/CofsterAwardsIcon.png">
+    <script type="text/javascript" src="js/crossfade.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="container">
+        <div id="bg_01">
+            <div id="content_02">
+                <article class="poster-sec-wrap">
+                    <div class="poster-sec">
+                        <h1 class="heading">Curiousity</h1>
+                    <p class="announcing">And the nominees are...</p>
+                    <ul class="poster-middle">
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/BX/videoframe_37886.png" alt="" onclick="openModal('modal1', 'Gator playing a Trumpet')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Gator playing a Trumpet</p>
+                        <p class="poster-desc">What a funny croc! XD</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/AVGN/in-double-dragon-1994-the-two-brothers-are-named-billy-and-v0-onnbpqfgicef1.jpg" alt="" onclick="openModal('modal2', 'Bimmy and Jimmy')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Bimmy and Jimmy</p>
+                        <p class="poster-desc">"Bimmy isn't even a real name"</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/Scott The Woz/maxresdefault (11).jpg" alt="" onclick="openModal('modal3', 'Madden Games')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Madden Games</p>
+                        <p class="poster-desc">"How Am I Going to Play Madden 08 Now?!"</p>
+                            </div>
+                        </li>
+                        <li class="poster-wrap">
+                            <a href="#">
+                                <img class="poster" src="img/screenshots/The Amazing Digital Circus/videoframe_1535224.png" alt="" onclick="openModal('modal4', 'Caine Office')">
+                            </a>
+                            <div class="poster-info">
+                        <p class="poster-title">Caine's Office</p>
+                        <p class="poster-desc">...Yep. I DID watch TADC. Who's the fool?...</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <a class="button4" href="#" onclick="openModal('modal1', 'Gator playing a Trumpet')">WINNERS</a>
+                <a class="return-button" href="comedy-faces.html">Back to the Comedy Faces Page</a>
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+  <span class="close" onclick="closeModal('modal1')">&times;</span>
+  <img src="img/screenshots/BX/videoframe_37886.png" alt="Gator playing a Trumpet" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal2" class="modal">
+  <span class="close" onclick="closeModal('modal2')">&times;</span>
+  <img src="img/screenshots/AVGN/in-double-dragon-1994-the-two-brothers-are-named-billy-and-v0-onnbpqfgicef1.jpg" alt="Bimmy and Jimmy" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal3" class="modal">
+  <span class="close" onclick="closeModal('modal3')">&times;</span>
+  <img src="img/screenshots/Scott The Woz/maxresdefault (11).jpg" alt="Madden Games" class="modal-content">
+  <div class="caption"></div>
+</div>
+
+<div id="modal4" class="modal">
+  <span class="close" onclick="closeModal('modal4')">&times;</span>
+  <img src="img/screenshots/The Amazing Digital Circus/videoframe_1535224.png" alt="Caine's Office" class="modal-content">
+  <div class="caption"></div>
+</div>
+    <script>
+function openModal(modalId, caption) {
+  let modal = document.getElementById(modalId);
+  modal.style.display = "flex";
+  modal.classList.add("show");
+  let message = modal.querySelector(".caption");
+  message.innerText = caption;
+}
+
+function closeModal(modalId) {
+  let modal = document.getElementById(modalId);
+  modal.classList.remove("show");
+  setTimeout(function () {
+    modal.style.display = "none";
+    modal.querySelector(".caption").innerText = "";
+  }, 300);
+}
+</script>
+</body>

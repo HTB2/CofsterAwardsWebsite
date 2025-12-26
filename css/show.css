@@ -1,0 +1,311 @@
+* {
+	margin: 0;
+	padding: 0;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+body {
+	background-color:#191515;
+	color: #ffffff;
+	font-family: arial;
+}
+
+a {
+	border: none;
+	outline: none;
+	color: #cccccf;
+	text-decoration: none;
+}
+
+a:active, a:visited {
+	color: #fff;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+a img {
+	border: none;
+	outline: none;
+}
+
+/* generic button */
+.button {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.button img.top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+
+.button:hover img.top {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+.hidden {
+	display: none;
+}
+
+#loader {
+	display: none;
+}
+
+#container {
+	position: relative;
+	margin: 0 auto;
+}
+
+#bg_01 {
+	position: relative;
+	background-image:url(../img/bg/CofsterAward2025CurtainBG.jpg);
+	background-position:center;
+	background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 735px;
+	margin: 0 auto;
+}
+#content_01 {
+	background-position:center;
+	background-repeat:no-repeat;
+	position: relative;
+	margin: 0 auto;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    margin-top: 120px;
+    padding-top: 10px;
+    width: 500;
+}
+.button1{
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 190px;
+    padding-right: 190px;
+    background-color: #191515c7;
+    border: #3c1e1e solid 2px;
+    border-radius: 10px;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button1:hover{
+    background-color: #141111;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    transition: ease-out 0.3s;
+}
+.button2{
+    width: auto;
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #191515c7;
+    border: #3c1e1e solid 2px;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button2:hover{
+    background-color: #141111;
+    transition: ease-out 0.3s;
+}
+.button3{
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #191515c7;
+    border: #3c1e1e solid 2px;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button3:hover{
+    background-color: #141111;
+    transition: ease-out 0.3s;
+}
+.button4{
+	position: relative;
+	top: 10;
+    width: 100px;
+    height: 10px;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 60px;
+    background-color: #191515c7;
+    border: #3c1e1e solid 2px;
+	border-radius: 10px;
+    font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+	text-align: center;
+	text-transform: uppercase;
+}
+.button4:hover{
+    background-color: #141111;
+    transition: ease-out 0.3s;
+}
+.return-button{
+	position: relative;
+	top: 0;
+	left: 90;
+	width: 500px;
+	margin: auto;
+	padding-top: 20px;
+    padding-bottom: 0px;
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+	display: flex;
+    align-items: center;
+	text-transform: uppercase;
+}
+.return-button:hover{
+	text-decoration: none;
+	color: #cccccf;
+	transition: ease-out 0.3s;
+}
+.return-button2{
+	position: absolute;
+	bottom: 210;
+	left: 650;
+	width: 500px;
+	margin: auto;
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+	display: flex;
+    align-items: center;
+	text-transform: uppercase;
+}
+.return-button2:hover{
+	text-decoration: none;
+	color: #cccccf;
+	transition: ease-out 0.3s;
+}
+.return-button3{
+	position: relative;
+	top: 18;
+	left: 135;
+	width: 500px;
+	margin: auto;
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+    font-size: 20px;
+	display: flex;
+    align-items: center;
+	text-transform: uppercase;
+}
+.return-button3:hover{
+	text-decoration: none;
+	color: #cccccf;
+	transition: ease-out 0.3s;
+}
+.heading{
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	text-transform: uppercase;
+	color: goldenrod;
+	text-align: center;
+	font-size: 40px;
+	padding-top: 20px;
+}
+.announcing{
+	font-family: Helvetica Neue, Helvetica, Roboto, Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease;
+}
+
+/* Modal content (image) */
+.modal-content {
+  position: relative;
+  width: 65%;
+  height: auto;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {transform: scale(0.6);}
+  to {transform: scale(1);}
+}
+
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* Caption of modal image */
+.caption {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+}
